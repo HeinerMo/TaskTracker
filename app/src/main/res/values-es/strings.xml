@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Task Tracker</string>
-    <string name="welcome_message">Welcome!</string>
+    <string name="welcome_message">¡Hola!</string>
 </resources>
