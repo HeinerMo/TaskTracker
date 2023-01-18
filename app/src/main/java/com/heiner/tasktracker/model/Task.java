@@ -29,4 +29,8 @@ public class Task {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+    public String getDescription() {
+        return description;
+    }
 }
