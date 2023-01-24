@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.heiner.tasktracker.R;
 import com.heiner.tasktracker.TaskViewHolder;
 import com.heiner.tasktracker.data.TaskData;
-import com.heiner.tasktracker.model.Task;
+import com.heiner.tasktracker.modal.Task;
 
 public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskViewHolder> {
 
@@ -21,7 +21,7 @@ public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskViewHolder
     public TaskRecyclerViewAdapter(Context localContext) {
         super();
         this.localContext = localContext;
-        this.data = TaskData.getInstance();
+        this.data = new TaskData(localContext);
     }
 
     @NonNull
@@ -35,13 +35,14 @@ public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskViewHolder
     @Override
     public void onBindViewHolder(@NonNull TaskViewHolder holder, int position) {
         // Set the data to textview
-        Task task = data.getTasks().get(position);
+        Task task = data.getAllTasks().get(position);
         holder.setName(task.getName());
         holder.setDescription(task.getDescription());
     }
 
     @Override
     public int getItemCount() {
-        return data.getTasks().size();
+        //TODO implement count method
+        return data.getAllTasks().size();
     }
 }

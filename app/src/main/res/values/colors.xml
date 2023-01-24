@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="status_bar">#D96D81</color>
-    <color name="background_upper">#D96D81</color>
-    <color name="background_lower">#9893F2</color>
+    <color name="status_bar">#A9612A</color>
+    <color name="background_upper">#A9612A</color>
+    <color name="background_lower">#A29337</color>
 </resources>

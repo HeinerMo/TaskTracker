@@ -1,4 +1,4 @@
-package com.heiner.tasktracker.model;
+package com.heiner.tasktracker.modal;
 
 public enum TaskStatus {
     IN_PROGRESS, //This is the default value for any task.

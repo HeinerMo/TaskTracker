@@ -15,9 +15,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-
-        //Load all user data
-        TaskData.getInstance().getTasks();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

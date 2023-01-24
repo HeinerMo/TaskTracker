@@ -1,21 +1,16 @@
-package com.heiner.tasktracker.model;
+package com.heiner.tasktracker.modal;
 
 public class Task {
     private final TaskStatus status;
     private String name;
     private final String description;
     private int id;
+    private int position;
 
     //TODO Define what attributes a task should have.
 
-    public Task(TaskStatus status, String name, String description) {
-        this.status = status;
-        this.name = name;
-        this.description = description;
-    }
-
-    public Task(TaskStatus status, String name, String description, int id) {
-        this.status = status;
+    public Task(String name, String description, int id) {
+        this.status = TaskStatus.IN_PROGRESS; //TODO Implement Status logic
         this.name = name;
         this.description = description;
         this.id = id;

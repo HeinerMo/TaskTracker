@@ -2,4 +2,9 @@
     <string name="app_name">Task Tracker</string>
     <string name="welcome_message">Welcome!</string>
     <string name="add_task_button">Add</string>
+    <string name="add_task_name_placeholder">Name</string>
+    <string name="add_task_description_placeholder">Description</string>
+    <string name="save_new_task_button">Add Task</string>
+    <string name="undo_message">Undo</string>
+    <string name="error_name_field_empty">You have to enter a name!</string>
 </resources>
