@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(getApplicationContext(), MainViewActivity.class));
             }
-        }, 1000);
+        }, 200);
     }
 
 }
