@@ -1,9 +1,10 @@
 package com.heiner.tasktracker.model;
 
 public class Task {
-    private TaskStatus status;
+    private final TaskStatus status;
     private String name;
-    private String description;
+    private final String description;
+    private int id;
 
     //TODO Define what attributes a task should have.
 
@@ -11,6 +12,13 @@ public class Task {
         this.status = status;
         this.name = name;
         this.description = description;
+    }
+
+    public Task(TaskStatus status, String name, String description, int id) {
+        this.status = status;
+        this.name = name;
+        this.description = description;
+        this.id = id;
     }
 
     public String getName() {
@@ -21,16 +29,25 @@ public class Task {
         this.name = name;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Task{" +
-                "status=" + status.name() +
+                "status=" + status +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", id=" + id +
                 '}';
-    }
-
-    public String getDescription() {
-        return description;
     }
 }
