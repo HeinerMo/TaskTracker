@@ -5,7 +5,7 @@ Task tracker wants to be as close to a pen and paper TODO list as possible.
 
 There is a Simple list of all of the tasks the user has added.
 
-![Alt text](screenshots/tasks.png?raw=true "Task View")
+<img src="screenshots/tasks.png" width=50% height=50%>
 
 The user can add a task by tapping the “add” button. The user has to specify a name or title, the description is optional and can be left blank.
 
